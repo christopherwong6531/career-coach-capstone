@@ -19,7 +19,7 @@ st.markdown("This multi-agent system will roast your resume, find the hidden gol
 @st.cache_resource 
 def setup_ai():
     import os
-    client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+    client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
     MODEL_ID = None
     try:
         available_models = list(client.models.list())
