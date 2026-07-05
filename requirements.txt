@@ -1,5 +1,5 @@
 streamlit
 google-genai
-beautiful-soup4
+beautifulsoup4
 requests
 fpdf2
